@@ -34,6 +34,7 @@
 }
 
 .eco-description-box {
+    animation:slide-in-fwd-right .4s cubic-bezier(.25,.46,.45,.94) both;
     width: 450px;
     display: flex;
     flex-direction: column;
@@ -71,6 +72,7 @@
 }
 
 .eco-card {
+    animation:slide-in-bottom 1s cubic-bezier(.25,.46,.45,.94) 0.4s both;
     background-color: rgba(224, 224, 224, 0.767);
     display: flex;
     flex-direction: column;
@@ -351,17 +353,110 @@ background: linear-gradient(142deg, rgba(24,44,92,0.9500175070028011) 12%, rgba(
     span {
         font-size: 1.7rem;
         margin-right: 80px;
-        color: white;
+        color: #bbb;
         margin-bottom: 8px;
         strong {
-            color: white;
+            color: #bbb;
         }
     }
     p {
         font-size: 1.3rem;
-        color: white;
+        color: #bbb;
         margin-right: 80px;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
 }
 
+.platinum-card-box {
+    background-color: rgba(0, 0, 0, 0.697);
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+}
+
+.platinum-card {
+    background: rgb(0,0,0);
+    background: linear-gradient(55deg, rgba(0,0,0,1) 30%, rgba(27,27,27,1) 65%, rgba(0,0,0,1) 85%);
+    box-shadow: 9px 10px 0 0 #6c6c6c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    h2 {
+        margin-top: 15px;
+        color: white;
+    }
+    p {
+        color: white;
+    }
+    span {
+        font-size: 2.2rem;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+    }
+}
+
+.img-card-platinum {
+    width: 100%;
+    overflow: hidden;
+    img {
+        width: 100%;
+        transition: transform .5s;
+        &:hover {
+            transform: scale(1.25);
+        }
+    }
+}
+
+.precio-entrega-platinum {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cuotas-platinum {
+    text-align: end;
+}
+
+
+
+.description-item-platinum {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-right: 2px solid #ffffff;
+    p {
+        white-space: nowrap;
+    }
+    img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.description-item-platinum:last-of-type{
+    border: none;
+}
+
+.card-button-platinum {
+    background-color: #b9b9b9;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    &:hover {
+        background-color: $gold;
+        color: white;
+        box-shadow: 0px -1px 6px 0px rgba(0,0,0,0.75);
+    }
+}
