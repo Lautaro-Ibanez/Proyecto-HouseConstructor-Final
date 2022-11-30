@@ -6,9 +6,6 @@
 body {
     font-family: Barlow,sans-serif;
     min-height: 100vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-image: url(/media/img/metal-background.jpg);
     position: relative;
     z-index: -1;
     display: grid;
@@ -19,6 +16,11 @@ body {
     "main main"
     "footer footer"
     ;
+}
+
+.background-body {
+    position: fixed;
+    z-index: -15;
 }
 
 header {

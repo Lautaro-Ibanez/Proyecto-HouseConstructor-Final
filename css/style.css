@@ -38,15 +38,16 @@
 body {
   font-family: Barlow,sans-serif;
   min-height: 100vh;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-image: url(/media/img/metal-background.jpg);
   position: relative;
   z-index: -1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px auto 150px;
   grid-template-areas: "navbar navbar" "main main" "footer footer"; }
+
+.background-body {
+  position: fixed;
+  z-index: -15; }
 
 header {
   grid-area: navbar; }
