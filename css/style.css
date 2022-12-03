@@ -36,6 +36,7 @@
     opacity: 1; } }
 
 body {
+  width: 100%;
   font-family: Barlow,sans-serif;
   min-height: 100vh;
   position: relative;
@@ -47,7 +48,10 @@ body {
 
 .background-body {
   position: fixed;
-  z-index: -15; }
+  z-index: -15;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100%; }
 
 header {
   grid-area: navbar; }
@@ -63,7 +67,8 @@ header {
   display: flex;
   justify-content: space-around;
   position: relative;
-  z-index: -1; }
+  z-index: -1;
+  width: 100%; }
 
 .logoBox {
   margin-left: 20px;
@@ -195,9 +200,8 @@ footer {
 
 .box-articulos-index {
   display: flex;
-  align-items: center;
   width: 100%;
-  gap: 50px;
+  height: 100vh;
   justify-content: space-evenly; }
 
 .card-articulos-index {
@@ -205,9 +209,10 @@ footer {
   background-color: rgba(255, 255, 255, 0.937);
   border-radius: 10px;
   display: flex;
-  width: 18%;
+  width: 20%;
+  height: 75%;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center; }
 
 .card-title h3 {
@@ -229,21 +234,27 @@ footer {
     transform: scale(1.25); }
 
 .card-price {
-  display: flex;
+  word-wrap: break-word;
+  display: block;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin: 1rem 0; }
-  .card-price p {
-    text-align: center;
-    color: #01213d;
-    font-size: 1.6rem; }
-    .card-price p span {
-      height: 50px;
-      color: #d7a461;
-      font-size: 1.8rem;
-      font-weight: 700;
-      white-space: nowrap; }
+  justify-content: space-evenly;
+  width: 100%; }
+
+.entrega {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #d7a461;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px; }
+
+.cuotas {
+  display: flex;
+  width: 85%;
+  justify-content: flex-end;
+  color: #01213d;
+  font-size: 1.6rem; }
 
 .card-description {
   display: flex;
