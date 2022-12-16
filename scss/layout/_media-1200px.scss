@@ -1,0 +1,152 @@
+@media screen and (max-width:1200px){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBar {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        position: fixed;
+        height: 90px;
+        z-index: 1000;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    footer {
+        height: 140px;
+    }
+
+    main {
+        margin-top: 90px;
+    }
+
+    .checkbtn {
+        display: block;
+        background-color: $gold;
+        background-image: url("/media/img/botonmenu.png");
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 6px;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    .menu-phone {
+        display: block;
+        background: rgba(0, 0, 0, 0.924);
+        z-index: 1000;
+        position: fixed;
+        top: 90px;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        transition: all .6s;
+        ul {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 30px;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40%;
+                height: 60px;
+                border-radius: 5px;
+                background-color: $gold;
+            }
+        }
+    }
+
+    #check:checked ~ .menu-phone{
+        left: 0;
+    }
+
+
+    .container-galeria-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-galeria-description {
+        display: inline-block;
+        width: 100%;
+        height: 200px;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .text-content-galeria-description > p{
+        margin-bottom: 30px;
+    }
+
+    .main-nosotros {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+    }
+
+
+    .img-nosotros {
+        margin-top: 20px;
+        width: 70%;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+            border-radius: 3px;
+        }
+    }
+
+    .nosotros-description {
+        grid-area: texto;
+        animation: slide-in-right .5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 4rem;
+        }
+    
+        h1::after {
+            width: 100%;
+        }
+    }
+
+    .container-contacto {
+
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .img-contacto {
+        width: 80%;
+        img {
+            height: 300px;
+        }
+    }
+
+    .contenedor-form {
+        width: 80%;
+        height: max-content;
+        margin-bottom: 30px;
+    }
+}
