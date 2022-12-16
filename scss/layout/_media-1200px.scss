@@ -26,16 +26,17 @@
     }
 
     .checkbtn {
-        display: block;
+        display: flex;
         background-color: $gold;
-        background-image: url("/media/img/botonmenu.png");
-        background-size: 60%;
-        background-repeat: no-repeat;
-        background-position: center;
         border-radius: 6px;
         width: 60px;
         height: 60px;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
+        img {
+            width: 65%;
+        }
     }
 
     .menu-phone {

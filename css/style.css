@@ -1048,16 +1048,16 @@ form {
   main {
     margin-top: 90px; }
   .checkbtn {
-    display: block;
+    display: flex;
     background-color: #d4af37;
-    background-image: url("/media/img/botonmenu.png");
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 6px;
     width: 60px;
     height: 60px;
+    align-items: center;
+    justify-content: center;
     cursor: pointer; }
+    .checkbtn img {
+      width: 65%; }
   .menu-phone {
     display: block;
     background: rgba(0, 0, 0, 0.924);
